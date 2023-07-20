@@ -1,0 +1,40 @@
+.pokemon-container{
+    @include displayFlex(flex, space-around, center);
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-inline: 2rem;
+    padding: 25px;
+
+}
+
+.card{
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px $color-shadow-card;
+    padding: 15px;
+    width: 200px;
+    height: 250px;
+}
+
+.pokeimg{
+    background-color: $color-image;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50%;
+
+    img{
+        height: 150px;
+    }
+
+}
+
+.pokeinfo{
+    margin-bottom: 5px;
+
+    &-id{
+        font-weight: bold;
+        color: $color-id;
+        font-size: 1.5rem;
+    }
+}

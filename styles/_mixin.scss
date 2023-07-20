@@ -1,0 +1,18 @@
+@mixin displayFlex($display, $content, $items){
+    display: $display;
+    justify-content: $content;
+    align-items: $items;
+}
+
+@mixin buttonStyle($border,$radius,$background,$color){
+    border: $border;
+    border-radius: $radius;
+    background-color: $background;
+    color: $color;
+}
+
+@mixin borderStyle($border, $radius, $shadow){
+    border: $border;
+    border-radius: $radius;
+    box-shadow: $shadow;
+}

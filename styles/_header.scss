@@ -1,0 +1,26 @@
+.header {
+    background-color: $color-base;
+    text-align: center;
+
+    img{
+        margin-block: 20px;
+    }
+
+    &-nav {
+        background-color: white;
+        padding-block: 25px;
+
+        .nav-search{
+            width: 20rem;
+            padding: 5px;
+            @include borderStyle(1px solid $color-base, 15px, none);
+        
+        }
+
+        .nav-search:hover, .nav-search:focus {
+            box-shadow:  0px 0px 10px $color-base;
+            outline: none;
+        }
+
+    }
+}
